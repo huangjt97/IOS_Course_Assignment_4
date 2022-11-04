@@ -19,21 +19,32 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qP4-Dw-21M">
                                 <rect key="frame" x="10" y="44" width="394" height="134.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1+2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARz-P3-p2R">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="134.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARz-P3-p2R">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="75"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJy-Zn-CfK">
+                                        <rect key="frame" x="0.0" y="75" width="384" height="59.5"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="ARz-P3-p2R" secondAttribute="bottom" id="BfJ-Ej-nyh"/>
-                                    <constraint firstItem="ARz-P3-p2R" firstAttribute="leading" secondItem="qP4-Dw-21M" secondAttribute="leading" id="Xcd-ZP-sch"/>
-                                    <constraint firstAttribute="trailing" secondItem="ARz-P3-p2R" secondAttribute="trailing" constant="10" id="g4I-eU-Ce2"/>
-                                    <constraint firstItem="ARz-P3-p2R" firstAttribute="top" secondItem="qP4-Dw-21M" secondAttribute="top" id="kGh-Xc-wGV"/>
+                                    <constraint firstItem="ARz-P3-p2R" firstAttribute="top" secondItem="qP4-Dw-21M" secondAttribute="top" id="5OE-qc-Jb1"/>
+                                    <constraint firstAttribute="trailing" secondItem="ARz-P3-p2R" secondAttribute="trailing" constant="10" id="Aoc-Qn-Sji"/>
+                                    <constraint firstItem="ARz-P3-p2R" firstAttribute="height" secondItem="fJy-Zn-CfK" secondAttribute="height" multiplier="1.25" id="NLH-xc-XJR"/>
+                                    <constraint firstAttribute="bottom" secondItem="fJy-Zn-CfK" secondAttribute="bottom" id="hwa-r1-JTl"/>
+                                    <constraint firstItem="fJy-Zn-CfK" firstAttribute="top" secondItem="ARz-P3-p2R" secondAttribute="bottom" id="kYe-RZ-q6x"/>
+                                    <constraint firstItem="ARz-P3-p2R" firstAttribute="leading" secondItem="qP4-Dw-21M" secondAttribute="leading" id="l4s-iz-Fw1"/>
+                                    <constraint firstAttribute="trailing" secondItem="fJy-Zn-CfK" secondAttribute="trailing" constant="10" id="rrv-gl-3uK"/>
+                                    <constraint firstItem="fJy-Zn-CfK" firstAttribute="leading" secondItem="qP4-Dw-21M" secondAttribute="leading" id="sCN-mB-GOD"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rNZ-Nr-OLZ">
@@ -69,7 +80,6 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="ModB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7cQ-SM-NI3"/>
                                                     <action selector="PerB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xc2-5E-dco"/>
                                                 </connections>
                                             </button>
@@ -128,7 +138,7 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="DivB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7I-9x-R5f"/>
+                                                    <action selector="MulB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fmh-1G-rnB"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -174,6 +184,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="-">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="SubB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ild-bt-hv4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -218,6 +231,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="+">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="AddB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3m-kd-NTL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -231,6 +247,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="0">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ZeroB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jpN-2J-isj"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zie-0X-tcV">
                                                 <rect key="frame" x="197" y="0.0" width="197" height="134.5"/>
@@ -241,6 +260,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title=".">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="PointB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CkK-r2-CIX"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbC-QR-Qz9">
                                                         <rect key="frame" x="98.5" y="0.0" width="98.5" height="134.5"/>
@@ -249,6 +271,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="=">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="EqualsB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FZi-sX-vK3"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -279,7 +304,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="CalculationProcess" destination="ARz-P3-p2R" id="22q-fM-Akp"/>
+                        <outlet property="CalculationProcess" destination="ARz-P3-p2R" id="5nf-kj-IsI"/>
+                        <outlet property="CalculationResult" destination="fJy-Zn-CfK" id="hp3-uy-UAA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
